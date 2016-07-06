@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobPortal.Entity", "JobPortal.Entity\JobPortal.Entity.csproj", "{1803B6B9-0ED2-42F6-B19A-47110887CD8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataLayer", "DataLayer", "{F0126562-6D56-4A59-8199-D4E29C00B328}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{CB5E1D21-B9D8-4B93-8803-9BF17BB29352}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobPortal.Repository", "JobPortal.Repository\JobPortal.Repository.csproj", "{479E3F48-BA31-4613-8792-33A551C614DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{F3EB9489-29BD-47C5-B11B-5C53ED73CE44}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "JobPortal.DataBase", "JobPortal.DataBase\JobPortal.DataBase.sqlproj", "{8623B9E1-F229-432E-BEB0-0648C4D1FD61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1803B6B9-0ED2-42F6-B19A-47110887CD8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1803B6B9-0ED2-42F6-B19A-47110887CD8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1803B6B9-0ED2-42F6-B19A-47110887CD8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1803B6B9-0ED2-42F6-B19A-47110887CD8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{479E3F48-BA31-4613-8792-33A551C614DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479E3F48-BA31-4613-8792-33A551C614DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479E3F48-BA31-4613-8792-33A551C614DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479E3F48-BA31-4613-8792-33A551C614DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8623B9E1-F229-432E-BEB0-0648C4D1FD61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8623B9E1-F229-432E-BEB0-0648C4D1FD61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8623B9E1-F229-432E-BEB0-0648C4D1FD61}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8623B9E1-F229-432E-BEB0-0648C4D1FD61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8623B9E1-F229-432E-BEB0-0648C4D1FD61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8623B9E1-F229-432E-BEB0-0648C4D1FD61}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1803B6B9-0ED2-42F6-B19A-47110887CD8D} = {F0126562-6D56-4A59-8199-D4E29C00B328}
+		{479E3F48-BA31-4613-8792-33A551C614DC} = {CB5E1D21-B9D8-4B93-8803-9BF17BB29352}
+		{8623B9E1-F229-432E-BEB0-0648C4D1FD61} = {F3EB9489-29BD-47C5-B11B-5C53ED73CE44}
+	EndGlobalSection
+EndGlobal
