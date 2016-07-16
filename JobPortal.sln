@@ -13,6 +13,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{F3
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "JobPortal.DataBase", "JobPortal.DataBase\JobPortal.DataBase.sqlproj", "{8623B9E1-F229-432E-BEB0-0648C4D1FD61}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{57A9BD32-69DB-4C2B-A4C1-25263C9EED58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobPortal.Test", "JobPortal.Test\JobPortal.Test.csproj", "{843848FA-0F50-4088-B733-D75AC78FE963}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{BDF12018-F8F5-451D-BCCB-4E6E99CB92BC}"
+	ProjectSection(SolutionItems) = preProject
+		External\LinqKit.dll = External\LinqKit.dll
+		External\Microsoft.Practices.ServiceLocation.pdb = External\Microsoft.Practices.ServiceLocation.pdb
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +43,10 @@ Global
 		{8623B9E1-F229-432E-BEB0-0648C4D1FD61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8623B9E1-F229-432E-BEB0-0648C4D1FD61}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8623B9E1-F229-432E-BEB0-0648C4D1FD61}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{843848FA-0F50-4088-B733-D75AC78FE963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843848FA-0F50-4088-B733-D75AC78FE963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843848FA-0F50-4088-B733-D75AC78FE963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843848FA-0F50-4088-B733-D75AC78FE963}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,5 +55,6 @@ Global
 		{1803B6B9-0ED2-42F6-B19A-47110887CD8D} = {F0126562-6D56-4A59-8199-D4E29C00B328}
 		{479E3F48-BA31-4613-8792-33A551C614DC} = {CB5E1D21-B9D8-4B93-8803-9BF17BB29352}
 		{8623B9E1-F229-432E-BEB0-0648C4D1FD61} = {F3EB9489-29BD-47C5-B11B-5C53ED73CE44}
+		{843848FA-0F50-4088-B733-D75AC78FE963} = {57A9BD32-69DB-4C2B-A4C1-25263C9EED58}
 	EndGlobalSection
 EndGlobal

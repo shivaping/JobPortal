@@ -30,8 +30,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit">
+      <HintPath>..\External\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\External\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,9 +55,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Implementation\PagedResult.cs" />
-    <Compile Include="Interface\IRepository.cs" />
-    <Compile Include="Interface\IUnitOfWork.cs" />
+    <Compile Include="Implementation\Entity.cs" />
+    <Compile Include="Implementation\FakeDbContext.cs" />
+    <Compile Include="Implementation\FakeDbSet.cs" />
+    <Compile Include="Implementation\QueryFluent.cs" />
+    <Compile Include="Implementation\QueryObject.cs" />
+    <Compile Include="Implementation\Repository.cs" />
+    <Compile Include="Implementation\UnitOfWork.cs" />
+    <Compile Include="Interface\DataContext\IDataContext.cs" />
+    <Compile Include="Interface\DataContext\IDataContextAsync.cs" />
+    <Compile Include="Interface\Infrastructure\IObjectState.cs" />
+    <Compile Include="Interface\Infrastructure\ObjectState.cs" />
+    <Compile Include="Interface\Repositories\IQueryFluent.cs" />
+    <Compile Include="Interface\Repositories\IQueryObject.cs" />
+    <Compile Include="Interface\Repositories\IRepository.cs" />
+    <Compile Include="Interface\Repositories\IRepositoryAsync.cs" />
+    <Compile Include="Interface\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="Interface\UnitOfWork\IUnitOfWorkAsync.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +80,11 @@
       <Name>JobPortal.Entity</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
