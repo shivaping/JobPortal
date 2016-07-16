@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
+//using Moq;
 using JobPortal.Repository.Interface;
 namespace JobPortal.Test
 {
