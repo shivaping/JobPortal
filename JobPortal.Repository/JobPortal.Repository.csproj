@@ -60,8 +60,12 @@
     <Compile Include="Implementation\FakeDbSet.cs" />
     <Compile Include="Implementation\QueryFluent.cs" />
     <Compile Include="Implementation\QueryObject.cs" />
-    <Compile Include="Implementation\Repository.cs" />
-    <Compile Include="Implementation\UnitOfWork.cs" />
+    <Compile Include="Implementation\Repository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Implementation\UnitOfWork.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Interface\DataContext\IDataContext.cs" />
     <Compile Include="Interface\DataContext\IDataContextAsync.cs" />
     <Compile Include="Interface\Infrastructure\IObjectState.cs" />

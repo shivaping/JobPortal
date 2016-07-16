@@ -20,6 +20,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{BDF12018-F8F5-451D-BCCB-4E6E99CB92BC}"
 	ProjectSection(SolutionItems) = preProject
 		External\LinqKit.dll = External\LinqKit.dll
+		External\Microsoft.Practices.ServiceLocation.dll = External\Microsoft.Practices.ServiceLocation.dll
 		External\Microsoft.Practices.ServiceLocation.pdb = External\Microsoft.Practices.ServiceLocation.pdb
 	EndProjectSection
 EndProject
