@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="~/Content/footer-basic-centered.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <style type="text/css">
         .bs-example {
             /*margin: 20px;*/
@@ -22,9 +23,12 @@
             font: normal 27px 'Cookie', cursive;
             margin: -8px;
         }
-        
+         .modal-content {
+            width: 500px !important;
+            margin: 30px auto !important;
+        }
     </style>
-
+    
 </head>
 <body>
 
@@ -64,39 +68,36 @@
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
+                <li><a href="~/User/ViewSignUp" data-target="#modal-containersignup" data-toggle="modal" id="signup"><span class="glyphicon glyphicon-user"  ></span>&nbsp;Sign Up</a></li>
+                <li><a href="~/User/ViewLogin" data-target="#modal-container" data-toggle="modal" id="login"><span class="glyphicon glyphicon-log-in" ></span>&nbsp;Login</a></li>
             </ul>
         </div>
     </nav>
+    <div id="modal-container" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+    <div id="modal-containersignup" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-content">
+        </div>
+    </div>
     @RenderBody()
     <footer class="footer-basic-centered">
-
         <p class="footer-company-motto">The company motto.</p>
-
         <p class="footer-links">
             <a href="#">Home</a>
-            ·
-			
+            ·			
             <a href="#">Blog</a>
-            ·
-			
+            ·			
             <a href="#">Pricing</a>
-            ·
-			
+            ·			
             <a href="#">About</a>
-            ·
-			
+            ·			
             <a href="#">Faq</a>
             ·
-			
-            <a href="#">Contact</a>
+			<a href="#">Contact</a>
         </p>
-
         <p class="footer-company-name">Company Name &copy; 2015</p>
-
     </footer>
-
-
 </body>
 </html>
