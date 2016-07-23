@@ -24,6 +24,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{BD
 		External\Microsoft.Practices.ServiceLocation.pdb = External\Microsoft.Practices.ServiceLocation.pdb
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSite", "WebSite", "{033A7573-74DC-4CE4-ABD9-19A86428979D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobPortal.Web", "JobPortal.Web\JobPortal.Web.csproj", "{96ADB352-A521-47AF-9C40-7C30AEAB9DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobPortal.Web.Tests", "JobPortal.Web.Tests\JobPortal.Web.Tests.csproj", "{5E25D8EA-35D2-4BD6-AE3F-27D7E7A3E64A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +54,14 @@ Global
 		{843848FA-0F50-4088-B733-D75AC78FE963}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{843848FA-0F50-4088-B733-D75AC78FE963}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{843848FA-0F50-4088-B733-D75AC78FE963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96ADB352-A521-47AF-9C40-7C30AEAB9DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96ADB352-A521-47AF-9C40-7C30AEAB9DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96ADB352-A521-47AF-9C40-7C30AEAB9DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96ADB352-A521-47AF-9C40-7C30AEAB9DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E25D8EA-35D2-4BD6-AE3F-27D7E7A3E64A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E25D8EA-35D2-4BD6-AE3F-27D7E7A3E64A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E25D8EA-35D2-4BD6-AE3F-27D7E7A3E64A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E25D8EA-35D2-4BD6-AE3F-27D7E7A3E64A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +71,7 @@ Global
 		{479E3F48-BA31-4613-8792-33A551C614DC} = {CB5E1D21-B9D8-4B93-8803-9BF17BB29352}
 		{8623B9E1-F229-432E-BEB0-0648C4D1FD61} = {F3EB9489-29BD-47C5-B11B-5C53ED73CE44}
 		{843848FA-0F50-4088-B733-D75AC78FE963} = {57A9BD32-69DB-4C2B-A4C1-25263C9EED58}
+		{96ADB352-A521-47AF-9C40-7C30AEAB9DE6} = {033A7573-74DC-4CE4-ABD9-19A86428979D}
+		{5E25D8EA-35D2-4BD6-AE3F-27D7E7A3E64A} = {033A7573-74DC-4CE4-ABD9-19A86428979D}
 	EndGlobalSection
 EndGlobal

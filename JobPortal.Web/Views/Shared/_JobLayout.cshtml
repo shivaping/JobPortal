@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example of Bootstrap 3 Static Navbar Extended</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="~/Content/footer-basic-centered.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .bs-example {
+            /*margin: 20px;*/
+        }
+
+        ul.nav li.dropdown:hover > ul.dropdown-menu {
+            display: block;
+        }
+        .jobmenu {
+            color: #ffffff;
+            font: normal 27px 'Cookie', cursive;
+            margin: -8px;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><span class="jobmenu">Job Portal</span></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs
+        <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu" style="float: left">
+                        <li><a href="#">Browse All Jobs</a></li>
+                        <li><a href="#">Jobs By Location</a></li>
+                        <li><a href="#">Jobs by Skill</a></li>
+                        <li><a href="#">Jobs by Designation</a></li>
+
+
+                        <li><a href="#">Jobs By Company</a></li>
+                        <li><a href="#">Jobs By Category</a></li>
+                        <li><a href="#">Advanced Search</a></li>
+                        <li><a href="#">Post your Resume</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Recruiters</a></li>
+                <li><a href="#">Companies</a></li>
+            </ul>
+            <form role="search" class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" placeholder="Search" class="form-control">
+                    <a href="#" class="btn btn-info btn-sm">
+                        <span class="glyphicon glyphicon-search"></span>Search
+                    </a>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    @RenderBody()
+    <footer class="footer-basic-centered">
+
+        <p class="footer-company-motto">The company motto.</p>
+
+        <p class="footer-links">
+            <a href="#">Home</a>
+            ·
+			
+            <a href="#">Blog</a>
+            ·
+			
+            <a href="#">Pricing</a>
+            ·
+			
+            <a href="#">About</a>
+            ·
+			
+            <a href="#">Faq</a>
+            ·
+			
+            <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">Company Name &copy; 2015</p>
+
+    </footer>
+
+
+</body>
+</html>
